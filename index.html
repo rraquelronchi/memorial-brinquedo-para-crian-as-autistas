@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuTiSTa · Memorial Descritivo do Projeto</title>
+<meta name="description" content="Memorial descritivo do projeto de brinquedo sensorial personalizável para crianças do espectro autista.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧩</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#F04A4A;--blue:#346EBC;--yellow:#FFE27A;--green:#33CC83;--ink:#161616;--bg:#fff;--soft:#FAF8F2;--line:#e8e4d8}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--ink:#f2f2f2;--bg:#15161a;--soft:#1e2026;--line:#33363f}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font:400 1rem/1.7 Poppins,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:3px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px;scrollbar-width:thin}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:99px;border:2px solid var(--line)}
+nav a:hover{border-color:var(--c,var(--blue));background:var(--c,var(--blue));color:#fff}
+header{padding:64px 0 40px;border-bottom:8px solid;border-image:linear-gradient(90deg,var(--red) 25%,var(--blue) 25% 50%,var(--yellow) 50% 75%,var(--green) 75%) 1}
+header small{display:block;font-weight:600;letter-spacing:.04em}
+.logo{font:400 clamp(4.5rem,18vw,11rem)/1 Chewy,cursive;margin:.1em 0;letter-spacing:-.02em}
+.logo span{mix-blend-mode:multiply}
+@media(prefers-color-scheme:dark){.logo span{mix-blend-mode:normal}}
+h1{font:600 clamp(1.1rem,3vw,1.5rem)/1.3 Poppins;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:.9rem}
+section{padding:56px 0 8px}
+h2{font:400 clamp(2rem,6vw,3.2rem)/1.1 Chewy,cursive;margin:0 0 6px}
+h2 .n{color:var(--c)}
+.lead{font-size:1.05rem;max-width:68ch;margin:0 0 24px}
+h3{font-size:1.05rem;margin:28px 0 8px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{border:3px solid var(--c,var(--line));border-radius:22px;padding:16px 20px;background:var(--bg)}
+.card h4{margin:0 0 4px;font-size:.98rem;color:var(--c)}
+.card p{margin:0;font-size:.92rem}
+.pill{display:inline-block;background:var(--c);color:#fff;font-weight:700;border-radius:99px;padding:6px 20px;margin-bottom:12px}
+.pill.y{color:#161616}
+.big{border-radius:28px;background:var(--green);color:#fff;padding:22px 26px;font-weight:600;max-width:820px}
+.red{--c:var(--red)}.blue{--c:var(--blue)}.green{--c:var(--green)}.yellow{--c:var(--yellow)}
+.tag{--c:var(--blue)}
+.concl{border-left:8px solid var(--c);background:var(--soft);padding:12px 18px;border-radius:0 16px 16px 0;margin-top:16px}
+.scroll{overflow-x:auto;border:3px solid var(--yellow);border-radius:18px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.85rem}
+th{background:var(--yellow);color:#161616;text-align:left;padding:10px}
+td{padding:9px 10px;border-top:1px solid var(--line);vertical-align:top}
+td.s{color:var(--green);font-weight:700}td.n{color:var(--red);font-weight:700}
+.dir{display:grid;grid-template-columns:56px 1fr;gap:6px 14px;margin-bottom:22px}
+.dir b.num{font:400 3rem/1 Chewy;color:var(--c)}
+.dir p{margin:0 0 4px}
+.dir em{font-style:normal;font-weight:700;color:var(--c)}
+.win{background:var(--green);color:#fff}
+tr.tot td{font-weight:700;border-top:3px solid var(--ink)}
+tr.tot td.w{color:var(--green)}
+.ph{border:3px dashed var(--line);border-radius:18px;padding:20px;text-align:center;font-size:.85rem;opacity:.8}
+.fig{margin:18px 0 0}.fig img{display:block;width:100%;height:auto;border-radius:18px}.fig figcaption{font-size:.8rem;opacity:.75;margin-top:6px;text-align:center}.fig.narrow{max-width:520px;margin-left:auto;margin-right:auto}.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.gal .fig{margin:0}.team{font-weight:600}
+footer{margin-top:64px;padding:32px 0;background:var(--soft);border-top:8px solid var(--red);font-size:.88rem}
+ol.ref li{margin-bottom:10px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a href="#briefing" style="--c:var(--red)">Briefing</a><a href="#tecnicas" style="--c:var(--blue)">Técnicas</a><a href="#resultados" style="--c:var(--green)">Resultados</a><a href="#similares" style="--c:var(--red)">Similares</a><a href="#afinidade" style="--c:var(--blue)">Afinidade</a><a href="#publico" style="--c:var(--green)">Público-alvo</a><a href="#diretrizes" style="--c:var(--red)">Diretrizes</a><a href="#conceitos" style="--c:var(--blue)">Conceitos</a><a href="#decisao" style="--c:var(--green)">Decisão</a><a href="#anexos" style="--c:var(--red)">Anexos</a><a href="#referencias" style="--c:var(--blue)">Referências</a>
+</div></nav>
+
+<header><div class="wrap">
+<small>Memorial Descritivo do Projeto</small>
+<div class="logo" id="logo" aria-label="Autista">AuTiSTa</div>
+<h1>Brinquedo sensorial personalizável para crianças do espectro autista</h1>
+<div class="meta">
+<span class="team">Charles Kleine · Raquel Ronchi Pereira · Yasmin Heloísa Machado</span>
+<span>Metodologia de Projeto de Design · Prof. Renato Valderramas · 2026</span>
+</div>
+</div></header>
+
+<main class="wrap">
+
+<section id="briefing" style="--c:var(--red)">
+<h2><span class="n">1.</span> Problema e respostas</h2>
+<p class="lead">Briefing (Ficha 0 – formulário guia) que orientou todo o projeto.</p>
+<div class="big">Como desenvolver um brinquedo que proporcione experiências sensoriais personalizáveis para crianças com TEA e que estimule o desenvolvimento motor e cognitivo, promova a autonomia e respeite suas individualidades sensoriais?</div>
+<div class="grid" style="margin-top:20px">
+<div class="card red"><h4>Quem pede e por quê?</h4><p>Pais, terapeutas e educadores que buscam brinquedos sensoriais acessíveis e adaptáveis, capazes de reduzir a sobrecarga sensorial e promover a autonomia da criança na personalização do brincar.</p></div>
+<div class="card blue"><h4>O que incomoda hoje?</h4><p>Pouca diversidade de brinquedos sensoriais no mercado, com baixa diferenciação estética. Muitos produtos não consideram as particularidades sensoriais nem a conexão da criança com o brinquedo.</p></div>
+<div class="card green"><h4>Como seria melhor?</h4><p>Um brinquedo com identidade visual diferenciada, personalizável e adaptável às preferências sensoriais, que ofereça experiência lúdica inclusiva, estimule a autonomia e respeite a individualidade.</p></div>
+<div class="card yellow"><h4>Para quem?</h4><p>Crianças com TEA, especialmente na primeira infância, considerando suas sensibilidades sensoriais, necessidades de desenvolvimento e preferências individuais.</p></div>
+<div class="card red"><h4>O que vai ser entregue?</h4><p>Projeto de um brinquedo sensorial inclusivo e personalizável: pesquisa, análise de similares, conceito, alternativas, detalhamento técnico, prototipagem, testes e documentação final.</p></div>
+<div class="card blue"><h4>O que não pode?</h4><p>Materiais tóxicos, peças pequenas com risco de asfixia, pontas cortantes ou estímulos excessivos. Priorizar materiais seguros, resistentes, higienizáveis e de baixo custo, com ergonomia e normas de segurança.</p></div>
+<div class="card green"><h4>Como saberemos que deu certo?</h4><p>Engajamento das crianças, baixa frustração, brincar com autonomia, estímulo às habilidades motoras, cognitivas e sensoriais, validação por profissionais, durabilidade e adequação ao uso terapêutico.</p></div>
+<div class="card yellow"><h4>Quando e quem?</h4><p>Estudantes responsáveis, em 10 semanas: 1–2 pesquisa · 3 análise e síntese · 4–5 ideação e conceito · 6–7 detalhamento técnico · 8 prototipagem e testes · 9 validação e ajustes · 10 documentação e apresentação.</p></div>
+</div>
+</section>
+
+<section id="tecnicas" style="--c:var(--blue)">
+<h2><span class="n">2.</span> Técnicas aplicadas</h2>
+<div class="grid">
+<div class="card red"><span class="pill">Entrevista</span><p><b>Com quem:</b> psicóloga Giovanna Menezes (CER II de Blumenau e Clínica Pertencer).<br><b>Quando:</b> 03/10/2026, 18h30, Blumenau.<br><b>Entrevistadas:</b> 1.<br><b>Por quê:</b> compreender, pela perspectiva profissional, as necessidades das crianças com TEA e suas particularidades no brincar.</p></div>
+<div class="card blue"><span class="pill">Registro fotográfico</span><p><b>Com quem:</b> brinquedos usados pela psicóloga nos atendimentos.<br><b>Quando:</b> 03/10/2026, 18h30, Blumenau.<br><b>Registros:</b> 1.<br><b>Por quê:</b> evidências de brinquedos funcionais no processo terapêutico.</p></div>
+<div class="card green"><span class="pill">Questionário</span><p><b>Com quem:</b> pais, mães ou responsáveis de crianças com TEA e adultos com TEA.<br><b>Quando:</b> 12 e 13/10/2026.<br><b>Respostas:</b> 13.<br><b>Por quê:</b> identificar e medir preferências, restrições e necessidades sensoriais no brincar.</p></div>
+</div>
+</section>
+
+<section id="resultados" style="--c:var(--green)">
+<h2><span class="n">3.</span> Resultados das técnicas</h2>
+
+<h3>Entrevista · síntese</h3>
+<div class="grid">
+<div class="card red"><h4>Brincar significativo</h4><p>Atrativo, intuitivo, adequado à faixa etária e com sentido para a criança.</p></div>
+<div class="card red"><h4>Estímulos sensoriais</h4><p>Texturas suaves e estímulos introduzidos gradualmente, evitando sobrecarga.</p></div>
+<div class="card red"><h4>Individualidade</h4><p>Respeitar preferências, sensibilidades e limites, permitindo escolhas.</p></div>
+<div class="card red"><h4>Desenvolvimento</h4><p>Encaixe, memória e associação favorecem habilidades motoras e cognitivas.</p></div>
+<div class="card red"><h4>Autonomia</h4><p>Oportunidades de escolha e habilidades relacionadas ao cotidiano.</p></div>
+<div class="card red"><h4>Imaginação e socialização</h4><p>Elementos familiares, narrativas e brincadeiras compartilhadas.</p></div>
+<div class="card red"><h4>Mediação</h4><p>Familiares, terapeutas e educadores orientam e ampliam as experiências.</p></div>
+</div>
+<div class="concl red"><b>Principal conclusão:</b> o brinquedo deve ser adaptável, intuitivo e sensorialmente acessível, respeitando a individualidade da criança e estimulando autonomia, desenvolvimento e interação social.</div>
+
+<h3>Registro fotográfico · síntese</h3>
+<div class="grid">
+<div class="card blue"><h4>1. Bola de plástico com expressão emocional</h4><p>Interação com emoções e desenvolvimento motor ao apertar e puxar.</p></div>
+<div class="card blue"><h4>2. Carrinho de tecido com enchimento</h4><p>Interesse pelo personagem e estímulos táteis ao apertar.</p></div>
+<div class="card blue"><h4>3. Pelúcia emoji mostrando a língua</h4><p>Reconhecimento de emoções e exploração tátil.</p></div>
+<div class="card blue"><h4>4. Pega-bolinha de madeira</h4><p>Coordenação motora por meio da manipulação das peças.</p></div>
+<div class="card blue"><h4>5. Mola de plástico</h4><p>Atrai a atenção por movimentos, sons e estímulos táteis.</p></div>
+</div>
+<figure class="fig narrow"><a href="img/registro-fotografico.webp" target="_blank" rel="noopener"><img src="img/registro-fotografico.webp" width="1095" height="1356" alt="Brinquedos numerados de 1 a 5 usados nos atendimentos da psicóloga" loading="lazy"></a><figcaption>Registro fotográfico dos brinquedos usados nos atendimentos (03/10/2026). Clique para ampliar.</figcaption></figure>
+<div class="concl blue"><b>Principal conclusão:</b> os brinquedos exploram diferentes formas de interação, com destaque para estímulos táteis, manipulação, reconhecimento de emoções e familiaridade com personagens.</div>
+
+<h3>Questionário · síntese</h3>
+<div class="grid">
+<div class="card green"><h4>Sensibilidade sensorial</h4><p>Desconforto com sons intensos, texturas específicas e excesso de estímulos simultâneos.</p></div>
+<div class="card green"><h4>Preferências de brincadeiras</h4><p>Montar, desmontar e encaixar; quebra-cabeças, carrinhos, bonecos e interesses específicos.</p></div>
+<div class="card green"><h4>Familiaridade e repetição</h4><p>Preferência por brinquedos conhecidos, padrões repetitivos e temas de interesse.</p></div>
+<div class="card green"><h4>Exploração e criatividade</h4><p>Construção, imaginação e manipulação de objetos.</p></div>
+<div class="card green"><h4>Dificuldades de aquisição</h4><p>Preços elevados, pouca variedade e dificuldade de achar brinquedos adequados.</p></div>
+<div class="card green"><h4>Inclusão e personalização</h4><p>Ampliar as opções, respeitando as características de cada criança.</p></div>
+</div>
+<div class="concl green"><b>Principal conclusão:</b> o brinquedo deve ser acessível, personalizável e adaptável às diferentes sensibilidades, permitir explorar formas de brincar, respeitar interesses individuais e favorecer a autonomia.</div>
+</section>
+
+<section id="similares" style="--c:var(--red)">
+<h2><span class="n">4.</span> Matriz de similares</h2>
+<p class="lead">Oito produtos analisados (diretos, indiretos e análogo) segundo variedade e intensidade sensorial, autonomia, risco físico, coordenação e imaginação.</p>
+<div class="scroll"><table>
+<tr><th>Item</th><th>Tipo</th><th>Variedade sens.</th><th>Intensidade sens.</th><th>Autonomia</th><th>Risco físico</th><th>Coord.</th><th>Imaginação</th></tr>
+<tr><td>Animais de madeira</td><td>Direto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="s">Sim</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Bola de encaixe em cores</td><td>Direto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Encaixe caixa de ovos</td><td>Direto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Dinossauros 3 em 1</td><td>Direto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Parafuso e rosca de encaixe</td><td>Indireto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Torre de madeira formas</td><td>Indireto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="s">Sim</td><td>Fina</td><td class="n">Não</td></tr>
+<tr><td>Blocos magnéticos</td><td>Indireto</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td>Fina</td><td class="s">Sim</td></tr>
+<tr><td>Tapete EVA</td><td>Análogo</td><td class="n">Não</td><td class="n">Não</td><td class="s">Sim</td><td class="n">Não</td><td class="n">Não</td><td class="n">Não</td></tr>
+</table></div>
+<div class="concl red"><b>Leitura geral:</b> nenhum produto apresentou variedade ou diferentes intensidades sensoriais, nem coordenação motora grossa. Os de encaixe desenvolvem a autonomia; os de madeira podem gerar riscos; os que têm significado além da montagem exercitam mais a imaginação.</div>
+</section>
+
+<section id="afinidade" style="--c:var(--blue)">
+<h2><span class="n">5.</span> Grupos por afinidade</h2>
+<p class="lead">Os dados das três técnicas foram agrupados em seis temas.</p>
+<div class="grid">
+<div class="card green"><h4>1. Impactos positivos</h4><p>Personagens familiares, encaixes, texturas agradáveis, circuitos motores e histórias favorecem sociabilidade, autonomia e imaginação.</p></div>
+<div class="card red"><h4>2. Desconfortos e sensibilidades</h4><p>Sons altos, luzes, cheiros, texturas, excesso de estímulos, mudanças bruscas e rigidez cognitiva exigem atenção.</p></div>
+<div class="card green"><h4>3. Funcionalidades que ajudam a aceitação</h4><p>Montar, desmontar, encaixar, água como estímulo bem aceito, materiais macios e brinquedos apertáveis.</p></div>
+<div class="card blue"><h4>4. Pouca diversificação</h4><p>Nenhum brinquedo analisado trabalha a coordenação grossa ou tem grande variedade de texturas, sons e cheiros.</p></div>
+<div class="card yellow"><h4>5. Diversidade de gostos</h4><p>Explorar texturas, brincar sozinho ou com outros, criar histórias, repetir movimentos e alinhar objetos.</p></div>
+<div class="card red"><h4>6. Condições de acesso</h4><p>Adequar à faixa etária, ser agradável, ter sentido, respeitar limites, introduzir estímulos gradualmente e ter preço acessível.</p></div>
+</div>
+<figure class="fig"><a href="img/grupos-por-afinidade.webp" target="_blank" rel="noopener"><img src="img/grupos-por-afinidade.webp" width="2071" height="1112" alt="Seis grupos por afinidade com post-its" loading="lazy"></a><figcaption>Seis grupos formados a partir das notas das três técnicas. Clique para ampliar.</figcaption></figure>
+</section>
+
+<section id="publico" style="--c:var(--green)">
+<h2><span class="n">6.</span> Público-alvo</h2>
+<div class="grid">
+<div class="card green"><h4>Quem são?</h4><p><b>Principal:</b> crianças com TEA, com interesses e necessidades diferentes (repetir ações, alinhar objetos, brincar sozinhas). <b>Secundários:</b> familiares, cuidadores, educadores e profissionais.</p></div>
+<div class="card green"><h4>Onde e quando o problema aparece?</h4><p>Nas brincadeiras em casa, na escola e em outros espaços. Muitos brinquedos têm pouca variedade de texturas e estímulos.</p></div>
+<div class="card green"><h4>O que fazem hoje?</h4><p>Exploram os brinquedos disponíveis, que trabalham principalmente coordenação fina, cores e formas.</p></div>
+<div class="card green"><h4>O que incomoda?</h4><p>Pouca variedade de estímulos; sons altos, luzes intensas, cheiros e certas texturas; excesso de estímulos ou novidades repentinas.</p></div>
+<div class="card green"><h4>O que valorizam?</h4><p>Brinquedos agradáveis, adequados à idade e aos interesses, com estímulos graduais, possibilidade de escolha e diferentes maneiras de brincar.</p></div>
+<div class="card green"><h4>O que não pode ser exigido?</h4><p>Aceitar todos os estímulos, brincar de uma única maneira ou se adaptar rápido a novidades. Famílias não devem precisar de muito tempo, conhecimento técnico ou dinheiro.</p></div>
+</div>
+</section>
+
+<section id="painel" style="--c:var(--yellow)">
+<h2>Painel semântico</h2>
+<p class="lead">Três painéis de referência visual: estilo de vida, expressão do produto e tema visual.</p>
+<figure class="fig"><a href="img/painel-semantico.webp" target="_blank" rel="noopener"><img src="img/painel-semantico.webp" width="2202" height="1077" alt="Painéis de estilo de vida, expressão do produto e tema visual" loading="lazy"></a><figcaption>Estilo de vida, expressão do produto e tema visual. Clique para ampliar.</figcaption></figure>
+</section>
+
+<section id="diretrizes" style="--c:var(--red)">
+<h2><span class="n">7.</span> Diretrizes</h2>
+<p class="lead">Cada diretriz segue a lógica: foi observado → isso significa → portanto.</p>
+<div class="dir" style="--c:var(--blue)"><b class="num">1</b><div><p><em>Observado:</em> 61,5% gostam de montar, desmontar e encaixar; a psicóloga confirma o interesse por encaixe (Q1, E1).</p><p><em>Portanto,</em> o projeto deve oferecer possibilidades de montar, desmontar e encaixar peças.</p></div></div>
+<div class="dir" style="--c:var(--red)"><b class="num">2</b><div><p><em>Observado:</em> 69,2% têm sensibilidade a texturas e 53,8% preferem brincar sempre com os mesmos brinquedos; novas texturas são importantes na primeira infância (Q1, E1, MS1).</p><p><em>Portanto,</em> o projeto deve apresentar diferentes texturas, permitindo a exploração da criança.</p></div></div>
+<div class="dir" style="--c:var(--green)"><b class="num">3</b><div><p><em>Observado:</em> bolas, ursos, pelúcias e bonecos com enchimento despertam interesse (E1, Q1).</p><p><em>Portanto,</em> o projeto deve apresentar elementos macios e apertáveis.</p></div></div>
+<div class="dir" style="--c:var(--red)"><b class="num">4</b><div><p><em>Observado:</em> encaixes com significados além da montagem estimulam mais a imaginação (E1, Q1, MS1).</p><p><em>Portanto,</em> o projeto deve permitir diferentes combinações e construções que incentivem a atividade imaginativa.</p></div></div>
+<div class="dir" style="--c:var(--blue)"><b class="num">5</b><div><p><em>Observado:</em> a repetição de movimentos pode fazer parte das preferências (E1, Q1).</p><p><em>Portanto,</em> o projeto deve permitir a repetição de movimentos e ações de forma independente.</p></div></div>
+</section>
+
+<section id="conceitos" style="--c:var(--blue)">
+<h2><span class="n">8.</span> Geração de alternativas e conceitos</h2>
+<p class="lead">Sketches agrupados com base nas diretrizes resultaram em três conceitos.</p>
+<div class="grid">
+<div class="card red"><h4>Conceito 1 · Montagem criativa</h4><p>Brinquedo modular com peças encaixáveis para montar e desmontar, estimulando a coordenação motora.<br><b>Atende:</b> 1, 4, 5 · <b>Não atende:</b> 2, 3</p></div>
+<div class="card yellow"><h4>Conceito 2 · Exploração tátil</h4><p>Objeto com diferentes texturas para contribuir com a aceitação sensorial.<br><b>Atende:</b> 2, 3 · <b>Não atende:</b> 1, 4, 5</p></div>
+<div class="card green"><h4>Conceito 3 · Personalização infantil</h4><p>Elementos configuráveis e intercambiáveis que adaptam características e interações às necessidades da criança.<br><b>Atende:</b> 1, 2, 4, 5 · <b>Não atende:</b> 3</p></div>
+</div>
+<h3>Sketches e agrupamento com base nas diretrizes</h3><div class="gal"><figure class="fig"><a href="img/sketches-1.webp" target="_blank" rel="noopener"><img src="img/sketches-1.webp" width="1502" height="1502" alt="Sketches e agrupamento com base nas diretrizes, parte 1" loading="lazy"></a><figcaption>Sketches e agrupamento por diretrizes (1/3)</figcaption></figure><figure class="fig"><a href="img/sketches-2.webp" target="_blank" rel="noopener"><img src="img/sketches-2.webp" width="1502" height="1502" alt="Sketches e agrupamento com base nas diretrizes, parte 2" loading="lazy"></a><figcaption>Sketches e agrupamento por diretrizes (2/3)</figcaption></figure><figure class="fig"><a href="img/sketches-3.webp" target="_blank" rel="noopener"><img src="img/sketches-3.webp" width="1502" height="1502" alt="Sketches e agrupamento com base nas diretrizes, parte 3" loading="lazy"></a><figcaption>Sketches e agrupamento por diretrizes (3/3)</figcaption></figure></div>
+</section>
+
+<section id="decisao" style="--c:var(--green)">
+<h2><span class="n">9.</span> Matriz de decisão e conceito escolhido</h2>
+<div class="scroll" style="border-color:var(--green)"><table style="min-width:520px">
+<tr><th style="background:var(--green);color:#fff">Critério</th><th style="background:var(--green);color:#fff">Peso</th><th style="background:var(--green);color:#fff">C1</th><th style="background:var(--green);color:#fff">C2</th><th style="background:var(--green);color:#fff">C3</th></tr>
+<tr><td>D1 · Montar, desmontar e encaixar</td><td>3</td><td>5</td><td>1</td><td>4</td></tr>
+<tr><td>D2 · Exploração de texturas</td><td>3</td><td>1</td><td>5</td><td>4</td></tr>
+<tr><td>D3 · Elementos macios e apertáveis</td><td>2</td><td>1</td><td>3</td><td>1</td></tr>
+<tr><td>D4 · Combinações imaginativas</td><td>2</td><td>4</td><td>1</td><td>3</td></tr>
+<tr><td>D5 · Repetição com autonomia</td><td>2</td><td>5</td><td>3</td><td>4</td></tr>
+<tr class="tot"><td>Total ponderado</td><td></td><td>38</td><td>32</td><td class="w">40</td></tr>
+</table></div>
+<div class="concl green"><b>Conceito escolhido: 3 · Personalização infantil.</b> Teve a maior pontuação e permite adaptar o brinquedo às necessidades e preferências individuais, explorar texturas, fazer combinações e estimular a autonomia. Serão incorporados elementos macios e apertáveis do Conceito 2 para ampliar a exploração sensorial.</div>
+</section>
+
+<section id="anexos" style="--c:var(--red)">
+<h2><span class="n">10.</span> Anexos</h2>
+<div class="grid">
+<div class="card red"><h4>Anexo A · Roteiro de entrevista semiestruturada</h4><p>Nove perguntas à psicóloga Giovanna (CER II/FURB) sobre o que o brinquedo deve ter, interação com os pais, estímulos mais aceitos, texturas, sons e cores a evitar, áreas pouco contempladas e autonomia versus socialização.<br><a href="https://docs.google.com/document/d/1BmEQ4RCsAVkR_lpsfQZLkkawpSWaaSY_/edit?usp=sharing" target="_blank" rel="noopener">Ver entrevista completa</a></p></div>
+<div class="card blue"><h4>Anexo B · Roteiro do questionário</h4><p>“O ato de brincar de crianças autistas”: 14 perguntas sobre perfil, comunicação, sensibilidades, brincadeiras, brinquedos preferidos, dificuldades de aquisição, autonomia e necessidade de uma marca específica.<br><a href="https://docs.google.com/forms/d/1teglVWku9pcsaRAbtowUL3sNs8rqg_Ps9KOkS4IPgrk/edit" target="_blank" rel="noopener">Ver questionário completo</a></p></div>
+</div>
+</section>
+
+<section id="referencias" style="--c:var(--blue)">
+<h2><span class="n">11.</span> Referências</h2>
+<ol class="ref">
+<li>DISTRITO FEDERAL. Secretaria de Estado da Pessoa com Deficiência (SEPD). <b>Cartilha do Autista</b>. Brasília: SEPD, 2023. <a href="https://biblioteca.cofen.gov.br/wpcontent/uploads/2024/04/cartilha-do-autista.pdf">Link</a>. Acesso em: 12 out. 2026.</li>
+<li>LIRA, M. M. S. de et al. A influência da cor de objetos lúdicos para crianças com autismo sob a perspectiva de profissionais de apoio e familiares. <b>Temática</b>, v. 19, n. 12, p. 31–46, 2023. <a href="https://periodicos.ufpb.br/index.php/tematica/article/view/68800">Link</a>. Acesso em: 21 out. 2026.</li>
+<li>MARQUES, R. P. et al. Monstruso: um brinquedo para auxiliar no tratamento terapêutico de crianças autistas. In: CONGRESSO BRASILEIRO DE PESQUISA E DESENVOLVIMENTO EM DESIGN, 15., 2024, Manaus. <b>Anais</b>. Manaus: EDUA, 2024. p. 2255-2273. <a href="https://www.periodicos.ufam.edu.br/index.php/cadernoppgd/article/view/16599">Link</a>. Acesso em: 21 out. 2026.</li>
+<li>MARTINS, A. D. F.; GÓES, M. C. R. de. Um estudo sobre o brincar de crianças autistas na perspectiva histórico-cultural. <b>Psicologia Escolar e Educacional</b>, v. 17, n. 1, p. 25-34, 2013. <a href="https://www.scielo.br/j/pee/a/hMJvcvcYrDmJ4Pcg9C9Kqqp/">Link</a>. Acesso em: 21 out. 2026.</li>
+<li>TOCHETTO, A. P. G.; DELFINO, D. da C. Desenvolvimento de crianças no espectro autista: uma visão a partir da intervenção na análise do comportamento aplicada. <b>Revista Contemporânea</b>, v. 3, n. 12, p. 27590–27611, 2023. <a href="https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/2628">Link</a>. Acesso em: 21 out. 2026.</li>
+</ol>
+</section>
+</main>
+
+<footer><div class="wrap">Memorial Descritivo · Metodologia de Projeto de Design · Prof. Renato Valderramas · 2026<br>Charles Kleine, Raquel Ronchi Pereira e Yasmin Heloísa Machado</div></footer>
+
+<script>
+// Colore as letras do logo e dos títulos com a paleta do projeto
+(function(){
+  var c=['#F04A4A','#346EBC','#FFE27A','#33CC83'];
+  var el=document.getElementById('logo');
+  var t=el.textContent;el.textContent='';
+  for(var i=0;i<t.length;i++){var s=document.createElement('span');s.textContent=t[i];s.style.color=c[[0,1,2,0,3,1,2][i%7]];el.appendChild(s);}
+})();
+</script>
+</body>
+</html>
